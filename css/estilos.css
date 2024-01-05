@@ -622,11 +622,12 @@ h3 {
 
 .video-gallery iframe {
   width: 100%;
-  /* height: 100%; */
-  height: 210px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 0;
 }
 
-.video-gallery figcaption {
+.video-gallery h2 {
   margin: 10px;
   font-size: 17px;
   font-weight: 600;
@@ -702,16 +703,13 @@ ul.footer-lista {
 /* -------->>>><<<<------- */
 @media screen and (max-width: 992px) {
   .texto-imagen-fondo {
+    top: 40%;
     transform: translate(-40%, -50%);
     font-size: 40px;
     min-width: 100%;
   }
 }
-@media screen and (max-width: 970px) {
-  .texto-imagen-fondo {
-    top: 55%;
-  }
-}
+
 @media screen and (max-width: 930px) {
   .segunda figcaption {
     padding-left: 90px;
@@ -720,6 +718,7 @@ ul.footer-lista {
 @media screen and (max-width: 917px) {
   .texto-imagen-fondo {
     font-size: 35px;
+    top: 30%;
   }
   .imagen-fondo {
     height: 465px;
@@ -737,7 +736,6 @@ ul.footer-lista {
 }
 @media screen and (max-width: 830px) {
   .texto-imagen-fondo {
-    top: 45%;
     font-size: 35px;
   }
   .segunda figcaption,
@@ -787,7 +785,7 @@ ul.footer-lista {
 
 @media screen and (max-width: 680px) {
   .texto-imagen-fondo {
-    top: 40%;
+    top: 25%;
   }
   .contenido-global-dos {
     justify-content: flex-start;
@@ -876,9 +874,7 @@ ul.footer-lista {
   .encab-vital img {
     width: 65px;
   }
-  .texto-imagen-fondo {
-    top: 30%;
-  }
+
   .imagen-fondo {
     height: 325px;
   }
